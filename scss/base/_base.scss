@@ -88,3 +88,17 @@ strong {
     margin: var(--margin) 0;
     background: var(--separate-bg-color);
 }
+
+.btn {
+    --height: 64px;
+
+    width: 157px;
+    height: var(--height);
+    text-align: center;
+    background: #000;
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: var(--height);
+}
