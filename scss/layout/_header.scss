@@ -1,12 +1,7 @@
 @use "../abstracts";
 
 .header {
-    background: rgb(34, 67, 84);
-    background: linear-gradient(
-        90deg,
-        rgba(34, 67, 84, 1) 0%,
-        rgba(4, 6, 23, 1) 88%
-    );
+    background: #222842;
 }
 
 .header-inner {
@@ -14,6 +9,24 @@
     align-items: center;
     justify-content: space-between;
     padding: 22px 0;
+}
+
+.header-form {
+    width: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 99px;
+
+    &__input {
+        width: 90%;
+
+        &::placeholder {
+            font-size: 1.6rem;
+        }
+    }
 }
 
 .navbar {
@@ -40,37 +53,6 @@
     }
 
     &__link:hover {
-        color: #dcb473;
-    }
-}
-
-.header-action {
-    display: flex;
-    align-items: center;
-    gap: 26px;
-
-    &__link {
-        color: #fff;
-        font-size: 1.8rem;
-        font-weight: 500;
-        transition: 0.25s;
-    }
-
-    &__link:hover {
-        color: #dcb473;
-    }
-
-    &__btn {
-        --height: 42px;
-        max-width: 120px;
-
-        background: #dcb473;
-        border-radius: 99px;
-        transition: 0.25s;
-    }
-
-    &__btn:hover {
-        background: #fff;
         color: #dcb473;
     }
 }

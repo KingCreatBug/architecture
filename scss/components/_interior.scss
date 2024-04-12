@@ -1,0 +1,76 @@
+.interior {
+    padding-top: 56px;
+    // background: url(https://dahoacuongtphcm.vn/upload/sanpham/da-nau-da.jpg);
+    background-size: cover;
+}
+
+.interior-info {
+    padding-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.25s;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__desc {
+        margin-top: 8px;
+        line-height: 1.75;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.interior-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-size: 4.2rem;
+        font-weight: 700;
+        line-height: 1.23;
+    }
+
+    &__desc {
+        margin-top: 18px;
+        line-height: 1.75;
+    }
+
+    &__link {
+        margin-top: 38px;
+        padding-bottom: 10px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        transition: 0.25s;
+        border-bottom: 3px solid #ccc;
+
+        &:hover {
+            color: #cccc;
+            border-color: #000;
+        }
+    }
+}

@@ -231,8 +231,8 @@ window.onload = function () {
 
 // Chuyển tab
 window.addEventListener("template-loaded", () => {
-    const tabsSelector = "prod-tab__item";
-    const contentsSelector = "prod-tab__content";
+    const tabsSelector = "slide-list__item";
+    const contentsSelector = "slide-container";
 
     const tabActive = `${tabsSelector}--active`;
     const contentActive = `${contentsSelector}--active`;
